@@ -1,7 +1,7 @@
 const merge = require('webpack-merge'),
     common = require('./webpack.base'),
-    rewrites = require('../rewrites.config.js'),
-    path = require('path'),
+    // rewrites = require('../rewrites.config.js'),
+    path = require('path');
     // apiMocker = require('webpack-api-mocker');
 
     module.exports = merge(common, {
@@ -31,7 +31,7 @@ const merge = require('webpack-merge'),
             watchOptions: {
                 //忽略文件
                 ignored: /node_modules/
-            }
+            },
             // 启动gzip压缩
             compress: true,
             //端口号
