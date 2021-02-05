@@ -16,13 +16,6 @@ export default {
     return {
       imgList: []
     };
-  },
-  mounted() {
-    this.$ajax.get("/api/pictureList").then(res => {
-      let result = res.data;
-      if(result.code !== 200) return;
-      this.imgList = result.data;
-    });
   }
 };
 </script>

@@ -1,16 +1,15 @@
 <template>
-  <div id="app">
-    <myNav></myNav>
-    <!-- 给VueRoutter留坑！！ -->
-    <router-view></router-view>
-  </div>
+    <mynav></mynav>
+<div id="app">
+    hello world!
+</div>
 </template>
 
 <script>
-import myNav from "./components/nav.vue";
-export default {
-  components: {
-    myNav
-  }
-};
+    import mynav from './components/nav.vue';
+    export default {
+        components: {
+            mynav
+        }
+    };
 </script>
