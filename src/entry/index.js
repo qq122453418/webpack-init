@@ -3,9 +3,9 @@ import VueRouter from 'vue-router';
 import ElementUi from 'element-ui';
 // import axios from 'axios';
 
-// import '../style/common.scss';
+import '../style/common.scss';
 
-const App = require('../pages/App.vue').default;
+import App from '../pages/App.vue';
 import Index from '../pages/Index.vue';
 import List from '../pages/List.vue';
 
@@ -13,7 +13,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 
 // 将VueRouter注册到Vue上
 Vue.use(VueRouter);
-// Vue.use(ElementUi);
+Vue.use(ElementUi);
 // 将axios挂载到Vue原型链上，方便使用
 // Vue.prototype.$ajax = axios;
 
