@@ -1,13 +1,12 @@
+// require("expose-loader?$!jquery");
+// import $ from "expose-loader?exposes=$,jQuery!jquery";
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import ElementUi from 'element-ui';
 // import axios from 'axios';
 
-import '../style/common.scss';
-
 import App from '../pages/App.vue';
 import Index from '../pages/Index.vue';
-import List from '../pages/List.vue';
 
 import 'element-ui/lib/theme-chalk/index.css';
 
@@ -18,13 +17,10 @@ Vue.use(ElementUi);
 // Vue.prototype.$ajax = axios;
 
 const router = new VueRouter({
-    routes: [{
+    routes: [
+        {
             path: '/',
             component: Index
-        },
-        {
-            path: '/list',
-            component: List
         }
     ]
 });

@@ -1,15 +1,11 @@
 <template>
 <div id="app">
-    <mynav></mynav>
     <router-view></router-view>
 </div>
 </template>
 
 <script>
-    import mynav from './components/nav.vue';
+    import $ from "jquery";
     export default {
-        components: {
-            mynav
-        }
     };
 </script>

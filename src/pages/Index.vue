@@ -1,20 +1,16 @@
 <template>
   <div id="index">
     <h1>hello world!</h1>
-    <p>halo Viola</p>
-    <div v-for="(img, index) in imgList" :key="index">
-      <img :src="img">
-    </div>
-    <div class="nice-pic"></div>
+    <img v-for="item in imgs" v-bind:src="item" />
   </div>
 </template>
 
 <script>
 export default {
   name: "index",
-  data: function() {
+  data(){
     return {
-      imgList: []
+        imgs:['../imgs/1.jpg']
     };
   }
 };
